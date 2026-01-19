@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">Spotify</div>
+            <ul>
+                <li><strong>Home</strong></li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </ul>
+        </nav>
+
+        <main class="main-view">
+            <header>
+                <h1>Welcome Back</h1>
+            </header>
+            <section class="grid" id="song-list">
+                </section>
+        </main>
+    </div>
+
+    <footer class="player-bar">
+        <div class="now-playing">
+            <img src="https://via.placeholder.com/50" alt="Album Art" id="current-art">
+            <div class="track-info">
+                <p id="track-title">Select a Song</p>
+                <p id="track-artist">Artist Name</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="play-btn">▶</button>
+            <div class="seek-bar-container">
+                <input type="range" id="seek-bar" value="0">
+            </div>
+        </div>
+
+        <div class="volume-controls">
+            <input type="range" id="volume" value="50">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
